@@ -9,7 +9,6 @@ h1{
 /*Menu*/
 #menu{
 	min-width: 500px;
-	margin: 0 100px;
 	vertical-align: center;
 }
 #menu a{ 
@@ -24,7 +23,13 @@ h1{
 	background-color:  #ac0;
 }
 .logo{
-	border: 1px solid #000;
+	margin-bottom: -15px;
+}
+#menu a img{
+	height: 28px;
+	margin-top: -8px;
+	margin-bottom: -8px;
+	margin-right: 4px;
 }
 /*End Menu*/
 
@@ -42,6 +47,24 @@ h1{
 /*End Footer*/
 
 /*Товар*/
+#clickable-table td:nth-child(2n){
+	background-color: brown;
+}
+
+#clickable-table td{
+	width: 40px;
+	height: 40px;
+	outline: 1px solid black;
+}
+#clickable-table td:hover{
+	background-color: yellow;
+}
+#clickable-table td:active{
+	background-color: green;
+}
+#clickable-table tr:first-child td{
+	height: 20px;
+}
 #main{
 	display: flex;
 	justify-content: center;
@@ -52,8 +75,19 @@ h1{
 	max-width: 400px;
 	margin-right: 100px;
 }
-#main #preview #tovarimage{
+#main 
+#tovarimage{
 	text-align:  center;
+}
+#tovarimage img{
+	outline: none;
+	border: none;
+    border-radius: 2pt;
+	box-shadow: 0 0 0 2pt black;
+	outline-offset: 5px;
+}
+#tovarimage img:hover{
+	box-shadow: 0 0 0 0pt red;
 }
 
 #main #description{
@@ -73,10 +107,18 @@ h1{
 	font-style: italic;
 	line-height: 16px;
 }
-#characteristics li{
+#characteristics tr:before{
+	content: "֍ ";
+}
+#characteristics td{
 	color: #a06060;
 	line-height: 19px;
-	list-style-type: "֍ ";
+	outline: 1px solid white;
+}
+#characteristics tr td:first-letter, #short-description:first-letter, #long-description:first-letter{
+	text-transform: capitalize;
+	color: green;
+	font-size: 20px;
 }
 #long-description{
 	color: #484343;
@@ -109,15 +151,24 @@ h1{
 	text-align:  center;
 	background: #fff;
 }
-
+input{
+	text-transform: capitalize;
+}
 .input p{
 	width: 100px;
 }
 .input input {
-    background-color: #ffe; /* Цвет фона */
-    color: #00f; /* Цвет текста */
+    background-color: #ffe;
+    color: #003; 
 	margin: 8px;
 	width: 200px;
 	height: 20px;
+}
+/*.input input:first-letter {
+	text-transform: uppercase;
+}*/
+.input input[type=email]:focus{
+    background-color: #ff9; /* Цвет фона */
+    color: #009;
 }
 /*Приоритеты: сверху вниз. От низкой точности к самой высокой точности*/
