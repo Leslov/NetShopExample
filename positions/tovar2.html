@@ -2,79 +2,66 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Магазин</title>
 	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
-	<div class="header">
-		<div id="menu">
-			<img class="logo" src="../img/manyprocs.png"/>
-			<a href="../index.html"><img src="../img/accum.png"/>Электроник Плюс</a>
-			<a href="../catalogue.html"><img src="../img/logo.png"/>Каталог</a>
-			<a href="../contacts.html"><img src="../img/contacts.png"/>Контакты</a>
+	<div class="container">
+		<div class="header">
+			<div class="headerwrapper">
+				<img class="logo" src="../img/manyprocs.png"/>
+				<div id="menu">
+					<a href="../index.html"><img src="../img/accum.png"/>Электроник Плюс</a>
+					<a href="../catalogue.html"><img src="../img/logo.png"/>Каталог</a>
+					<a href="../contacts.html"><img src="../img/contacts.png"/>Контакты</a>
+				</div>
+			</div>
 			<hr>
 		</div>
-	</div>
-	<hr>
-	<div id="main">
-		<div id="preview" class="column">
-			<h1>Процессор AMD Ryzen 5 3600</h1>
-			<div id="tovarimage">
-				<a href="img/tovar2.png">
-					<img src="img/tovar2.png">
-				</a>
+		<div id="main">
+			<div id="preview" class="column">
+				<h1>Процессор AMD Ryzen 5 3600</h1>
+				<div id="tovarimage">
+					<a href="img/tovar2.png">
+						<img src="img/tovar2.png">
+					</a>
+				</div>
 			</div>
-			<div id="price">
-				<h3>Цена: </h3>
-				<p>19480р</p>
-			</div>
-			<div>Покликай, если устал</div>
-			<table id="clickable-table">
-				<tr>
-					<td rowspan="2"><td/><td/><td/><td/>
-				</tr>
-				<tr>
-					<td/><td/><td/><td/>
-				</tr>
-				<tr>
-					<td/><td/><td/><td/><td/>
-				</tr>
-				<tr>
-					<td colspan="2" /><td/><td/><td/>
-				</tr>
-				<tr>
-					<td/><td/><td/><td/><td/>
-				</tr>
-			</table>
-		</div>
-		<div id="description" class="column">
-			<h3>Краткое описание</h3>
-			<div id="short-description">Проц обычный, квадратный</div>
-			<h3>Характеристики</h3>
-			<table id="characteristics">
-				<tr><td>Вид поставки</td><td>OEM</td></tr>
-				<tr><td>сокет</td><td>AM4</td></tr>
-				<tr><td>количество ядер</td><td>6 x 3600-4200 МГц</td></tr>
-				<tr><td>объем кэша L2/L3</td><td>3 МБ/32 МБ</td></tr>
-				<tr><td>оперативная память</td><td>2 x DDR4 3200 МГц</td></tr>
-				<tr><td>тепловыделение</td><td>65 Вт</td></tr>
-				<tr><td>техпроцесс</td><td>7 нм</td></tr>
-				<tr><td>количество потоков</td><td>12</td></tr>
-				<tr><td>ядро процессора</td><td>Matisse</td></tr>
-				<tr><td>игровой</td><td>да</td></tr>
-				<tr><td>дата выхода</td><td>Q3 2019</td></tr>
-			</table>
-			<h3>Подробное описание</h3>
-			<div id="long-description">
-				Процессор AMD Ryzen 5 2600X и "младший" вариант Ryzen 5 2600 можно назвать одними из наиболее успешных моделей второго поколения Ryzen, теперь у них появились преемники. Процессоры AMD Ryzen 5 3600X и Ryzen 5 3600 обещают стать такими же популярными. Мы протестировали "старшую" модель через несколько дней после анонса новых CPU, и она действительно показала себя с лучшей стороны. 6-ядерный процессор обеспечивает отличную игровую производительность по разумной цене, при этом он способен конкурировать с топовыми CPU предыдущих поколений.
+			<div id="description" class="column">
+				<div class="pricing">					
+					<div class="column"></div>
+					<div class="column">
+						<div id="price">19480р</div>
+						<a href="#" id="buybutton">Купить</a>
+					</div>
+				</div>
+				<h3>Краткое описание</h3>
+				<div id="short-description">Проц обычный, квадратный</div>
+				<h3>Характеристики</h3>
+				<table id="characteristics">
+					<tr><td>вид поставки</td><td>OEM</td></tr>
+					<tr><td>сокет</td><td>AM4</td></tr>
+					<tr><td>количество ядер</td><td>6 x 3600-4200 МГц</td></tr>
+					<tr><td>объем кэша L2/L3</td><td>3 МБ/32 МБ</td></tr>
+					<tr><td>оперативная память</td><td>2 x DDR4 3200 МГц</td></tr>
+					<tr><td>тепловыделение</td><td>65 Вт</td></tr>
+					<tr><td>техпроцесс</td><td>7 нм</td></tr>
+					<tr><td>количество потоков</td><td>12</td></tr>
+					<tr><td>ядро процессора</td><td>Matisse</td></tr>
+					<tr><td>игровой</td><td>да</td></tr>
+					<tr><td>дата выхода</td><td>Q3 2019</td></tr>
+				</table>
+				<h3>Подробное описание</h3>
+				<div id="long-description">
+					Процессор AMD Ryzen 5 2600X и "младший" вариант Ryzen 5 2600 можно назвать одними из наиболее успешных моделей второго поколения Ryzen, теперь у них появились преемники. Процессоры AMD Ryzen 5 3600X и Ryzen 5 3600 обещают стать такими же популярными. Мы протестировали "старшую" модель через несколько дней после анонса новых CPU, и она действительно показала себя с лучшей стороны. 6-ядерный процессор обеспечивает отличную игровую производительность по разумной цене, при этом он способен конкурировать с топовыми CPU предыдущих поколений.
 
-"Младшая" модель AMD Ryzen 5 2600 работает на 200-300 МГц медленнее, но при этом более экономично - с TDP всего 65 Вт. Мы по-прежнему получаем шесть ядер Zen 2, 32 Мбайт кэша L3 и 3 Мбайт кэша второго уровня. Цена стала ниже примерно на 3.000 ₽, поэтому AMD вместе с процессором прилагает менее мощный "боксовый" кулер.</div>
+				"Младшая" модель AMD Ryzen 5 2600 работает на 200-300 МГц медленнее, но при этом более экономично - с TDP всего 65 Вт. Мы по-прежнему получаем шесть ядер Zen 2, 32 Мбайт кэша L3 и 3 Мбайт кэша второго уровня. Цена стала ниже примерно на 3.000 ₽, поэтому AMD вместе с процессором прилагает менее мощный "боксовый" кулер.</div>
+			</div>
 		</div>
 	</div>
-	<br class="rowbreak">
-	<hr>
-	<div id="footer">
-		<footer id="footer-content">© Все права защищены ООО "Электроник Плюс" 2021</footer>
-	</div>
+	<footer id="footer">
+		<div id="footer-content">© Все права защищены ООО "Электроник Плюс" 2021</div>
+	</footer>
 </body>
 </html>
