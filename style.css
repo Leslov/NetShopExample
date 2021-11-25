@@ -135,7 +135,7 @@ a{
 	text-align: right;
 	height: 110px;
 }
-.column{
+.column-2{
 	width: 50%;
 	height: 100%;
 	float: left;
@@ -252,5 +252,26 @@ input{
 	margin-top: 50px;
 }
 #games-container{
-	height: 500px;
+	margin: 0px;
+	background: #d4f8f8;
+}
+.game-button{
+	outline: 1px solid black;
+	border-radius: 10px;
+	height: 100px;
+	margin: 10px 0px;
+	width: 100%;
+	appearance: button;
+	text-decoration: none;
+	color: initial;
+	text-align: center;
+	box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+.game-button:hover{
+	color: initial;
+	box-shadow: 0 0 20px rgb(0 0 0 / 100%);
+}
+#game1-wallpaper{
+	background: url(games/img/game1-wallpaper.png) center no-repeat;
+	background-size: 100% 100%;
 }
